@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useState } from "react"
+import { FormEvent, useState } from "react"
 import { InterviewForm } from "./InterviewForm"
 import { JobDetailForm } from "./JobDetailForm"
 import { RequisitionForm } from "./RequisitionForm"
@@ -6,7 +6,7 @@ import { useMultistepForm } from "./useMultistepForm"
 import './style.css'
 type FormData={
   rTitle: string
-  numberOfOpenings: number
+  numberOfOpenings: string
   gender: string
   urgency: string
   jobDetail: string
@@ -18,7 +18,7 @@ type FormData={
 }
 const INITIAL_DATA: FormData={
  rTitle:"",
- numberOfOpenings:"",
+ numberOfOpenings: "" ,
  gender:"",
  urgency:"",
  jobDetail:"",

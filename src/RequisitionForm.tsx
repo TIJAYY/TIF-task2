@@ -18,7 +18,7 @@ export function RequisitionForm({rTitle,urgency,numberOfOpenings,gender,updateFi
         <label>Requisition Title</label>
         <input onChange={e=>updateFields({rTitle:e.target.value})} autoFocus required type="text" value={rTitle}/>
         <label>Number Of Openings</label>
-        <input  onChange={e=>updateFields({numberOfOpenings:e.target.value})} required type="number" value={numberOfOpenings}></input>
+        <input  onChange={e=>updateFields({numberOfOpenings:e.target.value})} required type="string" value={numberOfOpenings}></input>
         <label>Gender</label>
       <select  onChange={e=>updateFields({gender:e.target.value})} value={gender} required>
         <option value="">Select Gender</option>
